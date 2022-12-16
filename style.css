@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #eff4fd;
+}
+.me{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #eff4fd;
+    position: relative;
+}
+
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: red;
+}
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images:hover .shape{
+    bottom: 40px;
+}
+
+.images:hover .boy{
+    left: 45%;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+.detail{
+    margin-left: 8%;
+    margin-top: 15%;
+    margin-right: 45%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color: #212121;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+    
+}
+
+.detail p{
+    color: #555;
+    line-height: 22px;
+}
+
+.detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.about .heading{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-top: 240px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.about .row .info{
+    flex:1 1 48rem;
+    padding:20px;
+    padding-left: 6rem;
+    
+}
+
+.about .row .info table{
+width: 400px;
+font-size: 20px;  
+}
+.about .row .info table tr td:first-child{
+color: brown; 
+}
+.about .row .info table tr td{
+padding: 10px;
+}
+
+
+.about .row .counter{
+    flex: 25% 25% 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about .row .counter .box{
+    width:200px;
+    background:#555;
+    text-align: center;
+    padding: 15px;
+    margin:10px;
+    border: 0;
+    border-radius: 40px;
+}
+
+.about .row .counter .box span{
+    font-size: 30px;
+    color: yellow;
+}
+
+.about .row .counter .box h3{
+    font-size: 20px;
+    color:#fff;
+}
+.education h1{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-top: 240px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 3rem;
+}
+
+.education .box-container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #555;
+    position: relative;
+}
+
+.education .box-container .box span{
+    font-size: 1.3rem;
+    background:#555;
+    color:#fff;
+    border-radius: 5rem;
+    padding:.5rem 2.5rem;
+}
+
+.education .box-container .box h3{
+    font-size: 2rem;
+    color: rgb(20, 20, 82);
+    padding-top: 1.5rem;
+}
+
+.education .box-container .box p{
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 1rem 0;
+}
+
+.education .box-container .box i{
+    position: absolute;
+    top:-1.5rem; left:-2.5rem;
+    height:5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color:#555;
+}
+
+.portfolio .heading{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-top: 240px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.portfolio .box-container2 .box2{
+    display: inline;
+    margin-left: 70px;
+    padding: 10px;
+    margin-bottom: 50px;
+
+}
+.portfolio .box-container2 .box2 img{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    width: 250px;
+    height: 250px;
+}
+.portfolio .box-container2 .box2{ 
+    position: relative;
+    overflow: hidden;
+}
+.portfolio .box-container2 .box2 img{ 
+    overflow: hidden; 
+    transform: scale(1); 
+    transition: all .2s;
+}
+.portfolio .box-container2 .box2:hover img{ 
+    transform: scale(1.5); 
+}
+
+.service .heading{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-top: 340px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+.service .heading ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    padding-left: 20px;
+}
+
+.service .counter{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+}
+.service .counter .box{
+    width:200px;
+    background:#555;
+    text-align: center;
+    padding: 35px;
+    margin:10px;
+    border: 0;
+    border-radius: 40px;
+}
+
+.service .counter .box h3{
+    font-size: 20px;
+    color:#fff;
+}
+
+.hireme .heading{
+    padding-top: 50px;
+    margin-left: 100px;
+    margin-top: 240px;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+
+.content{
+    padding: 20px;
+    margin-left: 50px;
+}
+.content .info h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.form{
+    padding: 5px;
+    margin-left: 50px;
+    
+}
+.form form input{
+    display: block;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 0;
+    border-radius: 10px;
+}
+.form form textarea{
+    height: 30px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 200px;
+    border: 0;
+    border-radius: 10px;
+}
+.form form button{
+    display:block;
+    height: 40px;
+    padding: 10px;
+    margin-left: 10px;
+    width: 100px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #555;
+    color: #fff;
+}
